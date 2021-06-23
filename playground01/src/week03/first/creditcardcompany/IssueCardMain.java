@@ -8,7 +8,7 @@ public class IssueCardMain {
 		foutyTwoCard.issueCard("철수", "A카드");
 		foutyTwoCard.issueCard("철수", "A카드");
 		foutyTwoCard.issueCard("철수", "B카드");
-		foutyTwoCard.issueCard("영희", "A카드");
+		foutyTwoCard.issueCard("영희", "B카드");
 		foutyTwoCard.issueCard("철수", "C카드");
 		foutyTwoCard.showCustomerInfo("철수");
 		foutyTwoCard.showCustomerInfo("영희");

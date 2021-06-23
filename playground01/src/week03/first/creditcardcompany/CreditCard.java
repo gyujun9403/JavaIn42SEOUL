@@ -13,6 +13,7 @@ public class CreditCard {
 	private SimpleDateFormat dateFormat = new SimpleDateFormat ("MM YY");
 	private String endDate;
 	
+	// 생성자. 카드명, 카드번호, 만료 일자를 초기화하며 인스턴스를 생성한다. 
 	protected CreditCard(String cardName) {
 		this.cardName = cardName;
 		this.cardNum = serialNum++;
@@ -23,6 +24,7 @@ public class CreditCard {
 		return cardName;
 	}
 	
+	// 만료 일자 계산에 필요한 기능을 수행하는 메소드.
 	private String makeExpirtDate() {
 		Calendar time = Calendar.getInstance();
 		time.setTime(new Date());
@@ -30,6 +32,7 @@ public class CreditCard {
 		return dateFormat.format(time.getTime());
 	}
 	
+	//카드의 정보를 반환하는 메소드.
 	protected String showCardInfo() {
 		return cardName + "	" + Integer.toString(cardNum) + "	" + endDate;
 	}
